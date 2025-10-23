@@ -1,0 +1,1 @@
+Pretrained checkpoints for Box2Mask and PropMask are provided in the Google Drive (https://drive.google.com/drive/folders/10fi5ZLFRnW5lCMVI7vMY61eTfOQlN9oI?usp=share_link ) or Baidu Drive (https://pan.baidu.com/s/1WdTPG_ojCEeWR5qpl2_WzQ?pwd=mksh ).
