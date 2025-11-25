@@ -4,8 +4,6 @@
 
 ![PAM Workflow](figures/PAM_workflow.png)
 
----
-
 ## Features
 
 * **Minimal → Volumetric Segmentation** : A single 2D prompt slice is enough for PAM to propagate and generate a complete 3D segmentation.
@@ -13,7 +11,6 @@
 * **No Fine-tuning Required** : A fully reusable workflow—upload your volume → provide one prompt → obtain full volumetric segmentation, with no retraining needed.
 * **Fast, Robust, and User-efficient** : Reduces interaction time and inference cost; stable across prompt and propagation variations; particularly strong for irregular and challenging anatomical structures.
 
----
 
 ## Download Pretrained Weights
 
@@ -34,7 +31,6 @@ After downloading, place all checkpoint files into:
 tutorials/checkpoints/
 ```
 
----
 
 ## Tutorials
 
@@ -99,7 +95,6 @@ We will provide a complete table of dataset access links used in PAM here, which
 | D43 | CHAOS-MR                   | [link](https://chaos.grand-challenge.org/)                                         | MR-T1, MR-T2             | Kidney, liver, spleen                                                                                                                                                             |
 | D44 | MouseKidney-SRX            | [link](https://doi.org/10.17867/10000188)                                          | SRX                      | Glomerulus                                                                                                                                                                        |
 
----
 
 ## Citation
 

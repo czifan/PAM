@@ -20,6 +20,6 @@ tutorials/checkpoints/
 *.tar.gz
 *.rar
 
-# 数据集目录
-tutorials/datasets/*/images/
-tutorials/datasets/*/masks/
+# # 数据集目录
+# tutorials/datasets/*/images/
+# tutorials/datasets/*/masks/
