@@ -1,6 +1,8 @@
 # PAM: A Propagation-Based Model for Segmenting Any 3D Objects across Multi-Modal Medical Images
 
-**PAM (Propagation-based Anything Model)** is a general-purpose framework that produces **volumetric 3D segmentations** from a  **minimal 2D prompt** . It works across *multi-modal medical images* including CT, MRI, PET, SRX, micro-CT, and more—without retraining.
+[[Paper]](https://arxiv.org/abs/2408.13836) [[Google Drive]]([https://drive.google.com/drive/folders/10fi5ZLFRnW5lCMVI7vMY61eTfOQlN9oI?usp=share_link](https://drive.google.com/drive/folders/10fi5ZLFRnW5lCMVI7vMY61eTfOQlN9oI?usp=share_link)) [[Baidu Pan]]([https://pan.baidu.com/s/1WdTPG_ojCEeWR5qpl2_WzQ?pwd=mksh](https://pan.baidu.com/s/1WdTPG_ojCEeWR5qpl2_WzQ?pwd=mksh))
+
+PAM (Propagation-based Anything Model) is a general-purpose framework that produces volumetric 3D segmentations from a  minimal 2D prompt . It works across multi-modal medical images including CT, MRI, PET, SRX, micro-CT, and more—without retraining.
 
 ![PAM Workflow](figures/PAM_workflow.png)
 
@@ -10,7 +12,6 @@
 * **Multi-modal & Object-agnostic** : Trained across 44 diverse datasets including CT, MRI, PET, and SRX.
 * **No Fine-tuning Required** : A fully reusable workflow—upload your volume → provide one prompt → obtain full volumetric segmentation, with no retraining needed.
 * **Fast, Robust, and User-efficient** : Reduces interaction time and inference cost; stable across prompt and propagation variations; particularly strong for irregular and challenging anatomical structures.
-
 
 ## Download Pretrained Weights
 
@@ -30,7 +31,6 @@ After downloading, place all checkpoint files into:
 ```
 tutorials/checkpoints/
 ```
-
 
 ## Tutorials
 
@@ -94,7 +94,6 @@ We will provide a complete table of dataset access links used in PAM here, which
 | D42 | ACDC                       | [link](https://humanheart-project.creatis.insa-lyon.fr/database/)                  | MR                       | LV, myocardium, RV                                                                                                                                                                |
 | D43 | CHAOS-MR                   | [link](https://chaos.grand-challenge.org/)                                         | MR-T1, MR-T2             | Kidney, liver, spleen                                                                                                                                                             |
 | D44 | MouseKidney-SRX            | [link](https://doi.org/10.17867/10000188)                                          | SRX                      | Glomerulus                                                                                                                                                                        |
-
 
 ## Citation
 
