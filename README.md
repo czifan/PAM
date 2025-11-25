@@ -1,6 +1,6 @@
 # PAM: A Propagation-Based Model for Segmenting Any 3D Objects across Multi-Modal Medical Images
 
-[[Paper]](https://arxiv.org/abs/2408.13836) | [[Google Drive]]([https://drive.google.com/drive/folders/10fi5ZLFRnW5lCMVI7vMY61eTfOQlN9oI?usp=share_link](https://drive.google.com/drive/folders/10fi5ZLFRnW5lCMVI7vMY61eTfOQlN9oI?usp=share_link)) | [[Baidu Pan]]([https://pan.baidu.com/s/1WdTPG_ojCEeWR5qpl2_WzQ?pwd=mksh](https://pan.baidu.com/s/1WdTPG_ojCEeWR5qpl2_WzQ?pwd=mksh))
+[[Paper]](https://arxiv.org/abs/2408.13836)
 
 PAM (Propagation-based Anything Model) is a general-purpose framework that produces volumetric 3D segmentations from a  minimal 2D prompt . It works across multi-modal medical images including CT, MRI, PET, SRX, micro-CT, and more—without retraining.
 
