@@ -332,14 +332,3 @@ class FastBox2SegDataset(Dataset):
             "query_xs": query_xs,
             "query_ys": query_ys,
         }
-
-if __name__ == "__main__":
-
-    ds = PropDataset("data/step1_task_data_nsz20", "data/step2_split_data/s0/train.txt", "train", sampling_N_queries=4, center_crop_size=256, target_size=224)
-    for batch in ds:
-        print(batch["sample_id"])
-        print(batch["support_x"].shape, batch["support_y"].shape)
-        print(batch["query_xs"].shape, batch["query_ys"].shape)
-
-        show_task(batch["support_x"], batch["support_y"], batch["query_xs"], batch["query_ys"])
-        break

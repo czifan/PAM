@@ -9,12 +9,12 @@ from datetime import datetime
 from tqdm import tqdm 
 import concurrent.futures
 from copy import deepcopy
-from propnet import *
-from propt import *
-from dataset import *
-from utils import *
-from criterion import *
-from config import *
+
+from model.PAM import *
+from utils.dataset import *
+from utils.utils import *
+from utils.criterion import *
+from utils.config import *
 
 import warnings
 warnings.filterwarnings('ignore')

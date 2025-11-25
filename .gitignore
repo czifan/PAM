@@ -1,0 +1,25 @@
+tutorials/checkpoints/
+
+# 大文件 - 模型文件
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.h5
+
+# 大文件 - 数据文件
+*.nii.gz
+*.nii
+*.dcm
+*.dicom
+
+# 大文件 - 其他
+*.sh
+!github.sh
+*.zip
+*.tar.gz
+*.rar
+
+# 数据集目录
+tutorials/datasets/*/images/
+tutorials/datasets/*/masks/
