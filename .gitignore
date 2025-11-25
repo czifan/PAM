@@ -8,10 +8,10 @@ tutorials/checkpoints/
 *.h5
 
 # 大文件 - 数据文件
-*.nii.gz
-*.nii
-*.dcm
-*.dicom
+# *.nii.gz
+# *.nii
+# *.dcm
+# *.dicom
 
 # 大文件 - 其他
 *.sh
