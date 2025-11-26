@@ -125,7 +125,7 @@ If you find PAM useful, please cite:
 
 ```
 @article{chen2025pam,
-  title={Pam: A propagation-based model for segmenting any 3d objects across multi-modal medical images},
+  title={PAM: A propagation-based model for segmenting any 3d objects across multi-modal medical images},
   author={Chen, Zifan and Nan, Xinyu and Li, Jiazheng and Zhao, Jie and Li, Haifeng and Lin, Ziling and Li, Haoshen and Chen, Heyun and Liu, Yiting and Tang, Lei and others},
   journal={npj Digital Medicine},
   year={2025}
