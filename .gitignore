@@ -27,3 +27,5 @@ tutorials/datasets/NeurIPS-2022-Cell-Seg_subset/cell_00001_label.tiff
 tutorials/datasets/NeurIPS-2022-Cell-Seg_subset/convert_label_to_prompt.ipynb
 tutorials/datasets/HC18_subset/convert_contour_to_mask.ipynb
 tutorials/datasets/HC18_subset/guiding_original_annotations/
+figures/3d-propagation.mp4
+tutorials/datasets/CHAOS-CT_subset/3d_viz.py

@@ -46,6 +46,8 @@ These tutorials cover **(1) the core 3D propagation pipeline reported in the pap
 Given a **single 2D prompt slice**, PAM propagates semantics across the entire volume to produce a **full 3D segmentation**.
 This works across **CT, MRI, PET, SRX, micro-CT**, and more — *without retraining*.
 
+![PAM-3d](figures/3d-propagation.gif)
+
 ### 2. Cross-2D Image Propagation (Extended Capability)
 
 **[tutorials/cross-2d-image-propagation.ipynb](tutorials/cross-2d-image-propagation.ipynb)**
