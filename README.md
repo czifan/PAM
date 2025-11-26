@@ -32,7 +32,6 @@ After downloading, place all checkpoint files into:
 tutorials/checkpoints/
 ```
 
-
 ## Tutorials
 
 PAM supports multiple forms of prompt-driven semantic propagation.
@@ -64,6 +63,8 @@ With only a **few annotated images**, PAM can generate **high-quality pseudo-lab
 *Demonstrates PAM's surprising generalization to computational pathology.*
 From a **few annotated instances** (e.g., one or a few cells), PAM can propagate semantics across an entire **whole-slide image (WSI)**, locating **all corresponding structures** despite never being trained on pathology.
 This enables scalable annotation of dense structures in gigapixel WSIs.
+
+![PAM-path](figures/pathology-propagation.png)
 
 ## Datasets Used in PAM (Links)
 
