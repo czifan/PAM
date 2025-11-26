@@ -1,6 +1,6 @@
 # PAM: A Propagation-Based Model for Segmenting Any 3D Objects across Multi-Modal Medical Images
 
-[[Paper]](https://arxiv.org/abs/2408.13836)
+[[Paper]](https://arxiv.org/abs/2408.13836) [[Checkpoint]]([https://drive.google.com/drive/folders/10fi5ZLFRnW5lCMVI7vMY61eTfOQlN9oI?usp=share_link](https://drive.google.com/drive/folders/10fi5ZLFRnW5lCMVI7vMY61eTfOQlN9oI?usp=share_link))
 
 PAM (Propagation-based Anything Model) is a general-purpose framework that produces volumetric 3D segmentations from a  minimal 2D prompt . It works across multi-modal medical images including CT, MRI, PET, SRX, micro-CT, and more—without retraining.
 
@@ -32,21 +32,42 @@ After downloading, place all checkpoint files into:
 tutorials/checkpoints/
 ```
 
+
 ## Tutorials
 
-* **[Prompt-to-Volume Propagation](tutorials/3d-propagation.ipynb)** (tutorials/3d-propagation.ipynb)
+PAM supports multiple forms of prompt-driven semantic propagation.
+These tutorials cover **(1) the core 3D propagation pipeline reported in the paper** and
+**(2) two extended capabilities discovered after publication** that greatly expand PAM's usability.
 
-  *Demonstrates PAM's core capability: generating full 3D volumetric segmentation for **any object in any medical imaging modality** from a  **single 2D prompt** . This is the primary workflow described in the paper.*
-* **[Cross-2D Image Propagation](tutorials/cross-2d-image-propagation.ipynb)** (tutorials/cross-2d-image-propagation.ipynb)
+### 1. Prompt-to-Volume Propagation (Core Workflow)
 
-  *Shows how PAM's strong semantic propagation enables large-scale pseudo-labeling: with only a  **few manually annotated images** , PAM can propagate segmentation cues across a  **large set of unlabeled 2D images** , offering a practical path toward building high-quality segmentation datasets with minimal annotation cost. (Note: This feature is  **not included in the paper** .)*
-* **[Whole-Slide Pathology Propagation (Coming Soon)](https://chatgpt.com/c/tutorials/pathological-wsi-propagation.ipynb)**
+**[tutorials/3d-propagation.ipynb](tutorials/3d-propagation.ipynb)**
 
-  *Illustrates PAM's surprising generalization to  **whole-slide pathology images (WSIs)** . With only a **small number of annotated instances** (e.g., a few cells), PAM can propagate semantic cues and segment  **all corresponding structures across the WSI** , despite never seeing pathology data during training. This demonstrates strong potential for scalable computational pathology workflows. (Note: This feature is  **not included in the paper** .)*
+*Reproduces PAM's primary capability described in the paper.*
+Given a **single 2D prompt slice**, PAM propagates semantics across the entire volume to produce a **full 3D segmentation**.
+This works across **CT, MRI, PET, SRX, micro-CT**, and more — *without retraining*.
+
+### 2. Cross-2D Image Propagation (Extended Capability)
+
+**[tutorials/cross-2d-image-propagation.ipynb](tutorials/cross-2d-image-propagation.ipynb)**
+
+*A practical extension discovered after paper acceptance.*
+PAM's strong semantic consistency allows it to propagate annotations **horizontally across large sets of 2D medical images**.
+With only a **few annotated images**, PAM can generate **high-quality pseudo-labels at scale**, enabling efficient dataset construction.
+
+![PAM-2d](figures/cross-2d-image-propagation.png)
+
+### 3. Whole-Slide Pathology Propagation (Extended Capability)
+
+**[tutorials/pathology-propagation.ipynb](tutorials/pathology-propagation.ipynb)**
+
+*Demonstrates PAM's surprising generalization to computational pathology.*
+From a **few annotated instances** (e.g., one or a few cells), PAM can propagate semantics across an entire **whole-slide image (WSI)**, locating **all corresponding structures** despite never being trained on pathology.
+This enables scalable annotation of dense structures in gigapixel WSIs.
 
 ## Datasets Used in PAM (Links)
 
-We will provide a complete table of dataset access links used in PAM here, which include updated URLs compared with the Supplementary Table 1 in the supplementary materials.
+We will provide a complete table of dataset access links used in PAM here, which include updated URLs compared with the *Supplementary Table 1* in the supplementary materials.
 
 | ID  | Dataset                    | Download link                                                                   | Modality                 | Objects                                                                                                                                                                           |
 | --- | -------------------------- | ------------------------------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
